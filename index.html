@@ -1,1 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.min.css" rel="stylesheet">
+  <title>Foody Restaurant</title>
+
+  <!--
+    - custom css link 
+  -->
+  <link rel="stylesheet" href="./assets/css/foodhub.css">
+  <link rel="stylesheet" href="./assets/css/media_query.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+  <div class="container">
+    <!--
+      - #HEADER
+    -->
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-wrapper">
+          <ul class="navbar-nav">
+            <li>
+              <a href="#home" class="nav-link"><h1>Home</h1></a>
+            </li>
+
+            <li>
+              <a href="#about" class="nav-link"><h3>About</h3></a>
+            </li>
+
+            <li>
+              <a href="#services" class="nav-link"><h3>Services</h3></a>
+            </li>
+
+            <li>
+              <a href="#menu" class="nav-link"><h3>Menu</h3></a>
+            </li>
+
+          </ul>
+
+          <div class="navbar-btn-group">
+            <button class="shopping-cart-btn">
+              <img src="./assets/images/cart.svg" alt="shopping cart icon" width="18">
+              <span class="count">5</span>
+            </button>
+
+            <button class="menu-toggle-btn">
+              <span class="line one"></span>
+              <span class="line two"></span>
+              <span class="line three"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="cart-box">
+        <ul class="cart-box-ul">
+          <h4 class="cart-h4">Your order.</h4>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/Idli_&_Vada.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Idli Vada</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>50
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/Poori_sabzi.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Poori</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>40
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/Roti_chickencurry.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Roti & Chicken curry</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>140
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/FishFry.jpeg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Fish Fry</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>180
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/Tea(Chaa).jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Tea</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>20
+              </p>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="cart-btn-group">
+          <button class="btn btn-secondary">Save</button>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <!--
+        - #PRODUCT SECTION
+      -->
+      <section class="product" id="menu">
+        <p>
+          <h6>Restaurant</h6>
+        </p>
+        <p> 
+          <h1 class="section-title">Most popular dishes</h1>
+        </p>
+       
+        <p class="section-text">
+          It's good to have your meals here anytime!!
+        </p>
+
+        <div class="products-grid">
+          <a href="#">
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/Idli_&_Vada.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+                <div class="card-badge green">
+                  <ion-icon name="leaf"></ion-icon>
+                  <p>Veg</p>
+                </div>
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Idli Vada</h3>
+
+                  <p class="product-price">
+                    <span class="small">Rs</span>50
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Smooth,Medium-sized,Spicy-Vada
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/Roti_chickencurry.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Roti & Chicken curry</h3>
+
+                  <p class="product-price">
+                    <span class="small">Rs</span>140
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Thin Rotis,Spicy curry
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/Poori_sabzi.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge green">
+                  <ion-icon name="leaf"></ion-icon>
+                  <p>Veg</p>
+                </div>
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Poori</h3>
+
+                  <p class="product-price">
+                    <span class="small">Rs</span>40
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Healthy light-weight dish
+                </p>
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>                  
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/Tea(Chaa).jpg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge red">
+                  <ion-icon name="flame"></ion-icon>
+                  <p>Hot</p>
+                </div>
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Tea(Chaa)</h3>
+
+                  <p class="product-price">
+                    <span class="small">Rs</span>20
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Dairy Milk,Organic tea leaves
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="product-card">
+              <div class="img-box">
+                <img src="./assets/images/Fruit_salad.jpeg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge green">
+                  <ion-icon name="leaf"></ion-icon>
+                  <p>Vegan</p>
+                </div>
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Fruit Salad</h3>
+
+                  <p class="product-price">
+                    <span class="small">Rs</span>45
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Strawberry,Apple,Jackfruit,Blueberries.
+                </p>
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/FishFry.jpeg" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Fish Fry</h3>
+
+                  <p class="product-price">
+                    <span class="small">Rs</span>180
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Highly flavoured,Spicy
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!--
+        - #ABOUT SECTION
+      -->
+      <section class="about" id="about">
+
+        <div class="about-left">
+
+          <div class="img-box">
+            <img src="./assets/images/Pic.png" alt="about image" class="about-img" width="250">
+          </div>
+
+          <div class="abs-content-box">
+            <div class="dotted-border">
+              <p class="number-lg">2</p>
+              <p class="text-md">Months <br> Experience</p>
+            </div>
+          </div>
+
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-6" width="20">
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-7" width="30">
+          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-8" width="35">
+          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-9" width="80">
+
+        </div>
+
+        <div class="about-left">
+
+          <h2 class="section-title">We are doing with love </h2>
+
+          <p class="section-text">
+            As we are initiated well and it's been a great experience to serve Delicious and favourably best quality dishes. 
+          </p>
+
+          <p class="section-text">
+            I'm sending lots of love and thanks to my team!!
+            Regards,
+          </p>
+          <p class="section-text">
+            Rakesh.
+          </p>
+
+        </div>
+
+      </section>
+
+      <!--
+        - #HOME SECTION
+      -->
+      <section class="home" id="home">
+
+        <div class="home-left">
+
+          <p class="home-subtext">Here's our favourite</p>
+
+          <h2 class="main-heading">Serving hygiene dishes and creating aesthetic ambience!</h2>
+
+          <p class="home-text">
+            Delicious and reasonable priced dishes !!
+          </p>
+        </div>
+
+        <div class="home-right">
+
+          <img src="./assets/images/food1.png" alt="food image" class="food-img food-1" width="200" loading="lazy">
+          <img src="./assets/images/food2.png" alt="food image" class="food-img food-2" width="200" loading="lazy">
+          <img src="./assets/images/food3.png" alt="food image" class="food-img food-3" width="200" loading="lazy">
+
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-1" width="25">
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-2" width="15">
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-3" width="30">
+          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-5" width="40">
+
+        </div>
+
+      </section>
+
+      <!--
+        - #SERVICES SECTION
+      -->
+      <section class="services" id="services">
+
+        <div class="service-card">
+
+          <p class="card-number">01</p>
+
+          <h3 class="card-heading">We are located in The Bengaluru</h3>
+
+          <p class="card-text">
+            It's our homie location to hang out and eat!
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <p class="card-number">02</p>
+
+          <h3 class="card-heading">Fresh ingredients from organic farms</h3>
+
+          <p class="card-text">
+            Maintaining hygiene and healthy ingredients are our primary thing.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <p class="card-number">03</p>
+
+          <h3 class="card-heading">Chill ambience </h3>
+
+          <p class="card-text">
+            We concentrate on providing literal peace environment to enjoy foods also!
+          </p>
+
+      </section>
+
+      
+    </main>
+
+    <!-- #FOOTER -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="social-link">
+
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </div>
+        <p class="copyright">&copy; Rakesh 2023. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/foodhub.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
